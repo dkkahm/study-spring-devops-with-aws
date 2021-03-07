@@ -12,6 +12,6 @@ public class HomeControler {
 
     @GetMapping("/")
     public String home() {
-        return "Hello:" + fakeJmsBroker.toString();
+        return "Hello2:" + fakeJmsBroker.toString();
     }
 }
