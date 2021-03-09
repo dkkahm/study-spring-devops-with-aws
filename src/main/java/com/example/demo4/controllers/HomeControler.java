@@ -15,7 +15,11 @@ public class HomeControler {
 
     @GetMapping("/")
     public String home() {
-        return "Hello4 from " + getIp();
+        double r = 0;
+        for(int i = 0; i < 1000000; ++ i) {
+            r += Math.random();
+        }
+        return "Hello4 from " + getIp() + ", random = " + r;
     }
 
     private static String getIp(){
