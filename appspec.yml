@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+
+files:
+  - source: target/demo4.jar
+    destination: /home/ec2-user/target
+
+hooks:
+  - location: codedeploy/scripts/restart-service.sh
+    timeout: 60
+    runas: root
