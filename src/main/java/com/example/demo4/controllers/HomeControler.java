@@ -19,7 +19,7 @@ public class HomeControler {
         for(int i = 0; i < 1000000; ++ i) {
             r += Math.random();
         }
-        return "Hello5 from " + getIp() + ", random = " + r;
+        return "Hello6 from " + getIp() + ", random = " + r;
     }
 
     private static String getIp(){
