@@ -6,6 +6,10 @@ files:
     destination: /home/ec2-user/target
 
 hooks:
+  BeforeInstall:
+    - location: codedeploy/scripts/clean_service.sh
+      timeout: 60
+      runas: root
   ApplicationStart:
     - location: codedeploy/scripts/restart-service.sh
       timeout: 60
