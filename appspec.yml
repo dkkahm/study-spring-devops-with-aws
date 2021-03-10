@@ -6,6 +6,7 @@ files:
     destination: /home/ec2-user/target
 
 hooks:
-  - location: codedeploy/scripts/restart-service.sh
-    timeout: 60
-    runas: root
+  ApplicationStart:
+    - location: codedeploy/scripts/restart-service.sh
+      timeout: 60
+      runas: root
